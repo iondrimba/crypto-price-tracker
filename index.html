@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>Crypto Price Tracker</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/fonts.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <meta name="theme-color" content="#00ff95">
+</head>
+
+<body class="light">
+  <header>
+    <nav class="theme-selector">
+      <button class="theme-button" data-theme="light" type="button" aria-label="Theme Light"></button>
+      <button class="theme-button" data-theme="dark" type="button" aria-label="Theme Dark"></button>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1 class="title currency-title">Price</h1>
+      <div class="currency-value-container">
+        <h2 class="currency">$</h2>
+        <h3 class="value last">0,00</h3>
+      </div>
+      <div class="volume-variation-container">
+        <div class="variation">
+          <span class="variation-title">Change %:</span>
+          <span class="variation-percent change24h">0,00%</span>
+        </div>
+        <div class="volume">
+          <span class="volume-title">Volume:</span>
+          <span class="volume-value vol24h">00 BTC</span>
+        </div>
+        <div class="high">
+          <span class="volume-title">High 24h:</span>
+          <span class="volume-value high24h">00 BTC</span>
+        </div>
+        <div class="low">
+          <span class="volume-title">Low 24h:</span>
+          <span class="volume-value low24h">00 BTC</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <nav class="menu">
+      <div class="coins">
+        <button data-product="btc-usd" type="button" class="coins-link active">Bitcoin</button>
+      </div>
+    </nav>
+  </footer>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>

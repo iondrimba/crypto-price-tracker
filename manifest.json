@@ -1,0 +1,42 @@
+{
+  "name": "Crypto Price Tracker",
+  "description": "Follow cryto prices",
+  "version": "0.1",
+  "incognito": "split",
+  "permissions": [
+    "tabs"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "file:///*"
+      ],
+      "js": [
+        "scripts/index.js"
+      ],
+      "css": [
+        "styles/fonts.css",
+        "styles/base.css",
+        "styles/footer.css",
+        "styles/main.css",
+        "styles/header.css"
+      ]
+    }
+  ]
+}

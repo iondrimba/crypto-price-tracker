@@ -1,0 +1,110 @@
+footer {
+  height: 74px;
+}
+
+.light footer {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0px -1px 0px 0px rgb(215, 217, 224);
+}
+
+.dark footer {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0px -1px 0px 0px rgb(58, 59, 61);
+}
+
+.menu {
+  display: grid;
+  grid-auto-flow: column;
+  justify-self: center;
+  padding: 10px 24px;
+  width: inherit;
+}
+
+.login-register {
+  align-content: center;
+  justify-self: end;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  display: none;
+  align-self: center;
+}
+
+.coins-link:hover {
+  color: var(--color-dark);
+}
+
+.coins-link,
+.login-link,
+.register-link {
+  transition: color .3s ease;
+  font-family: 'gilroy-bold';
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+.coins-link {
+  color: var(--color-primary);
+}
+
+.coins-link.active {
+  color: var(--color-secondary);
+}
+
+.light .login-link {
+  color: var(--color-dark);
+}
+
+.dark .login-link {
+  color: var(--theme-light);
+}
+
+.register-link {
+  color: var(--color-secondary);
+}
+
+.coins {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-content: center;
+}
+
+.logo-container {
+  display: none;
+}
+
+.logo {
+  width: 100px;
+  height: 30px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+}
+
+.light .logo {
+  background-image: url('../svg/logo-dark.svg');
+}
+
+.dark .logo {
+  background-image: url('../svg/logo-light.svg');
+}
+
+@media only screen and (min-width: 960px) {
+  .menu {
+    padding: 20px 80px;
+  }
+
+  .logo-container {
+    display: block;
+  }
+
+  .login-register {
+    display: grid;
+    grid-gap: 32px;
+  }
+
+  .coins {
+    grid-gap: 40px;
+  }
+}
