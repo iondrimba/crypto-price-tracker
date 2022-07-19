@@ -1,0 +1,50 @@
+.theme-selector {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  justify-content: end;
+  justify-self: center;
+  padding: 10px;
+  width: inherit;
+  height: 60px;
+}
+
+.theme-button {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+}
+
+[data-theme='light'] {
+  background-image: url('../svg/sun-active.svg');
+}
+
+[data-theme='dark'] {
+  background-image: url('../svg/moon-inactive.svg');
+}
+
+.light [data-theme='light'] {
+  background-image: url('../svg/sun-active.svg');
+}
+
+.light [data-theme='dark'] {
+  background-image: url('../svg/moon-inactive.svg');
+}
+
+.dark [data-theme='light'] {
+  background-image: url('../svg/sun-inactive.svg');
+}
+
+.dark [data-theme='dark'] {
+  background-image: url('../svg/moon-active.svg');
+}
+
+@media only screen and (min-width: 960px) {
+  .theme-selector {
+    padding: 16px 80px;
+    height: 76px;
+  }
+}

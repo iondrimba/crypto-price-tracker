@@ -1,2 +1,1 @@
-# crypto-price-tracker
-crypto-price-tracker
+# :pager: Crypto Price Tracker WIP

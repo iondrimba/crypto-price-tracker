@@ -1,0 +1,154 @@
+main section {
+  align-content: center;
+  display: grid;
+  grid-auto-flow: row;
+  justify-self: center;
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+.currency-value-container {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
+.title {
+  text-align: center;
+  color: var(--color-secondary);
+  font-family: 'gilroy-bold';
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.currency {
+  font-family: 'gilroy-bold';
+  font-size: 68px;
+  line-height: 68px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  margin-right: 5px;
+}
+
+.light .currency {
+  color: rgb(233, 234, 238);
+}
+
+.dark .currency {
+  color: rgb(98, 99, 102);
+}
+
+.value {
+  font-family: 'droid-sans-mono';
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.light .value {
+  color: var(--color-dark);
+}
+
+.dark .value {
+  color: rgb(217, 218, 224);
+}
+
+.volume-variation-container {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-self: flex-end;
+}
+
+.volume-variation-container>div {
+  margin-bottom: 10px;
+}
+
+.variation-title {
+  color: rgb(125, 126, 133);
+  font-family: 'gilroy-medium';
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.variation-percent {
+  color: var(--color-dark);
+  font-family: 'droid-sans-mono';
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.variation-percent.positive {
+  color: var(--color-positive);
+}
+
+.variation-percent.negative {
+  color: var(--color-negative);
+}
+
+.volume {
+  margin-left: 24px;
+}
+
+.volume-title {
+  color: rgb(125, 126, 133);
+  font-family: 'gilroy-medium';
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.volume-value {
+  font-family: 'droid-sans-mono';
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.light .volume-value {
+  color: var(--theme-dark);
+}
+
+.dark .volume-value {
+  color: var(--theme-light);
+}
+
+.currency-value-container {
+  justify-content: center;
+}
+
+@media only screen and (min-width: 960px) {
+  .title {
+    text-align: initial;
+  }
+
+  .currency-value-container {
+    margin-top: 80px;
+    margin-bottom: 56px;
+  }
+
+  .currency {
+    font-size: 220px;
+    line-height: 162px;
+  }
+
+  .value {
+    font-size: clamp(72px, 15vw, 234px);
+    line-height: clamp(72px, 15vw, 164px);
+  }
+
+  .volume-variation-container {
+    justify-self: end;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 640px;
+  }
+
+  .volume {
+    margin-left: 0;
+  }
+}
