@@ -1,5 +1,7 @@
 footer {
-  height: 74px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
 }
 
 .light footer {
@@ -13,7 +15,7 @@ footer {
 }
 
 .menu {
-  display: grid;
+  display: none;
   grid-auto-flow: column;
   justify-self: center;
   padding: 10px 24px;
@@ -90,9 +92,48 @@ footer {
   background-image: url('../svg/logo-light.svg');
 }
 
+.credits {
+  align-items: center;
+  display: flex;
+  height: auto;
+  align-content: center;
+  justify-content: normal;
+}
+
+.api-powered {
+  display: flex;
+  align-items: center;
+}
+
+.light .api-powered {
+ color: #000;
+}
+
+.dark .api-powered {
+  color: #fff;
+}
+
+.api-powered-img {
+  background-color: #000;
+  display: block;
+  width: 70px;
+  padding: 6px;
+  margin-left: 10px;
+}
+
 @media only screen and (min-width: 960px) {
+  footer {
+    justify-content: initial;
+    height: 74px;
+  }
+
+  .credits {
+    width: 270px;
+  }
+
   .menu {
     padding: 20px 80px;
+    display: initial;
   }
 
   .logo-container {
