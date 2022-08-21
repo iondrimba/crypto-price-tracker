@@ -37,7 +37,7 @@ footer {
 .login-link,
 .register-link {
   transition: color .3s ease;
-  font-family: 'gilroy-bold';
+  font-family: 'bold';
   font-weight: bold;
   letter-spacing: 0px;
 }

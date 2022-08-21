@@ -18,7 +18,7 @@ body {
   align-content: space-between;
   background-color: var(--bg-color);
   display: grid;
-  font-family: 'gilroy-regular';
+  font-family: 'regular';
   font-size: 16px;
   grid-auto-flow: row;
   height: 100vh;
