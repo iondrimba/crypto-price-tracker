@@ -15,6 +15,7 @@
 
 body {
   transition: background-color 0.3s ease;
+  font-variant: tabular-nums;
   align-content: space-between;
   background-color: var(--bg-color);
   display: grid;
